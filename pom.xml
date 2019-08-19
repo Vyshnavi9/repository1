@@ -17,13 +17,13 @@
 <properties>
 <!-- Optional URL to server. Default value is http://localhost:9000 -->
 <sonar.host.url>
-http://18.224.64.60:9000
+https//13.58.26.201:9000
 </sonar.host.url>
 </properties>
 </profile>
 </profiles>
-
 <distributionManagement>
+
   <repository>
     <id>nexus</id>
    
@@ -79,7 +79,29 @@ http://18.224.64.60:9000
                     </execution>
                 </executions>
       </plugin>
-            
+<plugin>
+    <groupId>org.jacoco</groupId>
+    <artifactId>jacoco-maven-plugin</artifactId>
+    <version>0.7.7.201606060606</version>
+    <executions>
+        <execution>
+            <goals>
+                <goal>prepare-agent</goal>
+            </goals>
+        </execution>
+        <execution>
+            <id>report</id>
+            <phase>prepare-package</phase>
+            <goals>
+                <goal>report</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>           
+
+
+
+
       <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
@@ -109,7 +131,8 @@ http://18.224.64.60:9000
    <configuration>
       <skipStaging>true</skipStaging>
    </configuration>
-</plugin>    </plugins>
+</plugin>   
+ </plugins>
   </build>
 
 </project>
