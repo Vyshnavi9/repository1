@@ -27,12 +27,12 @@ https//13.58.26.201:9000
   <repository>
     <id>nexus</id>
    
-    <url>http://18.216.192.165:8081/repository/maven-releases</url>
+    <url>http://18.219.49.72:8081/repository/maven-releases</url>
   </repository>
   <snapshotRepository>
     <id>nexus</id>
     
-    <url>http://18.216.192.165:8081/repository/maven-snapshots/</url>
+    <url>http://18.219.49.72:8081/repository/maven-snapshots/</url>
   </snapshotRepository>
 </distributionManagement>  
 <dependencies>
