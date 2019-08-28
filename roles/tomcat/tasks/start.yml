@@ -1,0 +1,7 @@
+---
+- name: Gather EC2 instance metadata
+  action: ec2_metadata_facts
+
+- name: Start application on {{ansible_hostname}}
+  command: wget "http://admin:admin@18.221.212.109:8090/manager/text/start?path=/SampleWebApp.war" -O - -q
+

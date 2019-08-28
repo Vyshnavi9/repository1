@@ -1,0 +1,6 @@
+---
+- name: Deploy the new WAR file to target servers
+  
+  copy: src=/var/lib/jenkins/workspace/Ansiblejob1/target/maven-simple-0.2-SNAPSHOT.war dest=/home/ansible/tomcat/webapps
+  
+
