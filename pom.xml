@@ -44,7 +44,7 @@ https//3.14.245.243:9000
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.12</version>
+      <version>4.13.1</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
